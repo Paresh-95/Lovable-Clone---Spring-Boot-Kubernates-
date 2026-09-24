@@ -1,11 +1,11 @@
 spring:
   application:
-    name: Lovable-Clone
+    name: lovable-clone
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/Lovable
-    username: postgres
-    password: paresh123
+    url: jdbc:postgresql://localhost:5432/testDB
+    username: testUser
+    password: password
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -16,3 +16,8 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
+        jdbc:
+          time_zone: Asia/Kolkata
+
+jwt:
+  secret-key: dadnwjdnqndqnkjdjbqkdkqbkqndkqmndkx2qnsi2bhdq
